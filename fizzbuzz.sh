@@ -1,13 +1,14 @@
 ##!/bin/bash
 
-for i in `seq $1 $2`
+read s e
+for i in `seq $s $e`
 do
     if (($i % 15 == 0)); then
-    echo fizzbuzz
+    echo FizzBuzz
     elif (($i % 3 == 0)); then
-    echo fizz
+    echo Fizz
     elif (($i % 5 == 0)); then
-    echo buzz
+    echo Buzz
     else
     echo $i
     fi
